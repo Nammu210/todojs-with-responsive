@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Js</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+</head>
+
+<body id="body">
+    <div id="h1">
+        <div id="name"><span id="tex">Tasks</span> List</div>
+        <div id="ab" onclick="modal()">
+            <i class="fas fa-plus-circle color-white"></i>
+            <span id="add-button-text"></span>
+        </div>
+        <div class="tmt">Add Item</div>
+    </div>
+
+    <div id="back-button">
+        <i id="back-icon" class="fas fa-arrow-circle-left" onclick="displayAll()"></i>
+        Go back
+    </div>
+
+    <div id="dyh1">abc</div>
+
+    <div id="div1">
+        <div id="box1">
+            <span class="text1 con">Add New List</span>
+            <input id="modal-input-box" class="inb con" type="text" placeholder="Add New List"> <br></input>
+            <button id= "modal-add-button" class="bbutt con" onclick="addCard()">Add</button>
+            <button id="mcb" class="bbutt con" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    
+    <div id="dcm">
+        <div id="cardofbox">
+            <span class="text1 con">Add New Item</span>
+            <input id="modal-input-box-card" class="inb con" type="text" placeholder="Add New Item"> <br></input>
+            <button id= "modal-add-button" class="bbutt con" onclick="addList()">Add</button>
+            <button id="mcb" class="bbutt con" onclick="closeCardModal()">Close</button>
+        </div>
+    </div>
+
+
+     <div style="display: none;" class="tle">
+        <button class="linb" value="" onclick="completedTask(this)">Done</button>
+     </div>
+
+     
+     <div id="list">
+         No Items in Todo list
+     </div>
+
+    <div id="maincontainer">
+        <div class="card">
+            <div class="wrap-cont">
+            <option class="card-head" onclick="h1Func(this.value)">Try</option>
+            <br><hr><div class="add-list-after-this"></div>
+            <br>
+            <div class="bofc">
+                <button class="fas fa-trash dbc"></button>    
+                <button class="fas fa-plus-circle buttcard"></button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
